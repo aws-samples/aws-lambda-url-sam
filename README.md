@@ -63,7 +63,7 @@ cd client
 * Installing python dependencies	
 
 make sure you have boto3 and requests dependencies installed.
-To install dependencies runn the following command.
+To install dependencies run the following command.
 
 ```bash
 pip3 install -r requirements.txt
