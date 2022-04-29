@@ -4,9 +4,10 @@
 
 This project contains source code and supporting files for a serverless application that you can deploy with the SAM CLI. It includes the following files and folders.
 
+- template.yaml - A template that defines the application's AWS resources.
 - lambdas/ - folder contains lambda function code
 - client/v4-signing-lambda-url.py - script to test the application
-- template.yaml - A template that defines the application's AWS resources.
+- client/requirements.txt - file that contain a list python dependencies required by script
 
 The application uses several AWS resources, including Lambda functions and an API Gateway API. These resources are defined in the `template.yaml` file in this project. You can update the template to add AWS resources through the same deployment process that updates your application code.
 
@@ -61,17 +62,17 @@ cd client
 
 * Installing python dependencies	
 
-make sure you have boto3 and requests dependencies installed:
+make sure you have boto3 and requests dependencies installed.
+To install dependencies runn the following command.
 
 ```bash
-pip install boto3
-pip install requests
+pip3 install -r requirements.txt
 ```
 
 * running the client app	
 
 ```bash
-python v4-signing-lambda-url.py
+python3 v4-signing-lambda-url.py
 ```
 
 * if you get the below response, is because you successfully authenticated using AWS credentials to call lambda URL.
