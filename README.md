@@ -69,7 +69,12 @@ To install dependencies run the following command.
 pip3 install -r requirements.txt
 ```
 
-* running the client app	
+* running the client app using the command "python" or "python3" depending of your system configuration	
+
+```bash
+python v4-signing-lambda-url.py
+```
+or
 
 ```bash
 python3 v4-signing-lambda-url.py
