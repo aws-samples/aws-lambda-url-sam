@@ -27,7 +27,7 @@ import boto3
 # ************* REQUEST VALUES *************
 
 # get lambda function url from cloudformation stack (lambdaurl) output
-cf_client = boto3.client('cloudformation')
+cf_client = boto3.client('cloudformation', region_name='us-east-1')
 stackname = 'lambdaurl'
 response = cf_client.describe_stacks(StackName=stackname)
 outputs = response["Stacks"][0]["Outputs"]
